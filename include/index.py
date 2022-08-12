@@ -74,14 +74,14 @@ def translate(ch):
 		else:
 			eng=i
 		out=open(outf,'a+')
-		out.write('<pre>')
+		out.write('<div style="white-space:pre">')
 		for ii in notp:
 			if ii in i:
 				out.write(i+'  '+'\n')
 			else:
 				out.write(eng+'  '+'\n'+i+'\n')
 			break
-		out.write('</pre>')
+		out.write('</div>')
 		out.close()
 	#main
 	f=open(outf,'r')
